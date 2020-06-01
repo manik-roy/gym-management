@@ -31,5 +31,5 @@ const catagoriesSchema = new Schema({
   },
 });
 
-const User = mongoose.model('Catagories', catagoriesSchema);
-module.exports = User;
+const Catagories = mongoose.model('Catagories', catagoriesSchema);
+module.exports = Catagories;

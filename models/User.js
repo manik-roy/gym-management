@@ -17,6 +17,35 @@ const userSchema = new Schema({
     trim: true,
     required: true,
   },
+  mobile: {
+    type: String,
+    trim: true,
+    required: true,
+  },
+  dateOfBirth: {
+    type: Date,
+    required: true,
+  },
+  gender: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  address: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  country: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  city: {
+    type: String,
+    required: true,
+    trim: true,
+  },
   password: {
     type: String,
     trim: true,
