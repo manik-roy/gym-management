@@ -2,6 +2,7 @@ const express = require('express');
 const passport = require('passport');
 const cors = require('cors');
 const userRoutes = require('./routes/userRoutes');
+const catagoriesRoutes = require('./routes/catagoriesRoutes');
 
 const app = express();
 app.use(express.json());
@@ -10,6 +11,7 @@ app.use(passport.initialize());
 require('./auth/passport')(passport);
 // Routes
 app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/catagories', catagoriesRoutes);
 
 // unhandled routes
 app.all('*', (req, res) => {
